@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>XDY-Player</title>
+    <style>
+      .container {
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="xdyplayer"></div>
+    </div>
+    <script type="text/javascript" src="./bundle/XDYplayer.js"></script>
+    <script>
+      var player = new XDYplayer({
+        video: {
+          src: 'http://oq6srlc1j.bkt.clouddn.com/test.mp4',
+          pic: 'http://oq6srlc1j.bkt.clouddn.com/poster.png'
+        },
+        thumbnail: {
+          src: 'http://oq6srlc1j.bkt.clouddn.com/IMG_1448.JPG',
+          css: 'http://oq6srlc1j.bkt.clouddn.com/sprite.css',
+          total: 270
+        }
+      })
+    </script>
+  </body>
+</html>
